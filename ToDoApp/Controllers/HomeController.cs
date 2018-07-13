@@ -17,14 +17,14 @@ namespace ToDoApp.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "This is simple web application created to get first touch with ASP.NET Core.";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Marcin Kruszyński";
 
             return View();
         }
