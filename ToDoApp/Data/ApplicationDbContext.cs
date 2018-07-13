@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using ToDoApp.Models;
 
 namespace ToDoApp.Data
 {
@@ -12,5 +13,6 @@ namespace ToDoApp.Data
             : base(options)
         {
         }
+        public DbSet<ToDoApp.Models.ToDo> ToDo { get; set; }
     }
 }
